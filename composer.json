@@ -1,5 +1,5 @@
 {
-    "name":"FelixPfeiffer/fpDependedFormFields",
+    "name":"FelixPfeiffer/fpdependentformfields",
     "description":"Define another formfield, that will be hidden and shown, when the present field get's a value.",
     "keywords":["Form","dependent","dependence"],
     "type":"contao-module",
