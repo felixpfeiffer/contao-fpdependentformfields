@@ -1,0 +1,29 @@
+{
+    "name":"FelixPfeiffer/fpDependedFormFields",
+    "description":"Define another formfield, that will be hidden and shown, when the present field get's a value.",
+    "keywords":["Form","dependent","dependence"],
+    "type":"contao-module",
+    "homepage":"http://www.felixpfeiffer.com",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"Felix Pfeiffer",
+            "email":"info@felixpfeiffer.com",
+            "homepage":"http://www.felixpfeiffer.com",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "email":"info@felixpfeiffer.com",
+        "issues":"https://github.com/felixpfeiffer/contao-fpDependentFormFields/issues",
+        "source":"https://github.com/felixpfeiffer/contao-fpDependentFormFields"
+    },
+    "require":{
+        "php":">=5.3",
+        "contao/core":">=3.2,<3.4",
+        "contao-community-alliance/composer-installer":"*"
+    },
+    "autoload":{
+        "classmap":["system/"]
+    }
+}
