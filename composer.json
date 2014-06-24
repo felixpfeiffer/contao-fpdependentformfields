@@ -23,6 +23,9 @@
         "contao/core":">=3.2,<3.4",
         "contao-community-alliance/composer-installer":"*"
     },
+    "autoload":{
+        "classmap":[""]
+    },
     "extra":{
         "contao":{
             "sources":{
