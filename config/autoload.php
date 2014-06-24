@@ -16,7 +16,7 @@
  */
 ClassLoader::addNamespaces(array
 (
-	'FelixPfeiffer',
+	'felixpfeiffer',
 ));
 
 
@@ -26,7 +26,7 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Classes
-	'FelixPfeiffer\DependentFormFields\fpDependedFormFields' => 'system/modules/fpDependedFormFields/classes/fpDependedFormFields.php',
+	'felixpfeiffer\DependentFormFields\fpDependedFormFields' => 'system/modules/fpDependedFormFields/classes/fpDependedFormFields.php',
 ));
 
 

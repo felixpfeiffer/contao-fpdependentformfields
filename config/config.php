@@ -14,4 +14,4 @@
 /**
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['loadFormField'][] = array('FelixPfeiffer\\DependentFormFields\\fpDependedFormFields', 'addAttributes');
+$GLOBALS['TL_HOOKS']['loadFormField'][] = array('felixpfeiffer\\DependentFormFields\\fpDependedFormFields', 'addAttributes');

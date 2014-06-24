@@ -10,7 +10,7 @@
  * @license   LGPL
  * @copyright 2014 Felix Pfeiffer : Neue Medien
  */
-namespace FelixPfeiffer\DependentFormFields;
+namespace felixpfeiffer\DependentFormFields;
 
 /**
  * Class fpDependedFormFields
