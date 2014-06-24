@@ -3,9 +3,9 @@
         $("[data-trigger]").on('keyup click', function () {
             var showhide = false;
 
-            if($(this).attr('type') == 'text')
+            if($(this).attr('type') == 'checkbox')
             {
-                if ($(this).val() !== '')
+                if ($(this).is(':checked'))
                 {
                     showhide = true;
                 }
@@ -14,9 +14,9 @@
                     showhide=false;
                 }
             }
-            else if($(this).attr('type') == 'checkbox')
+            else
             {
-                if ($(this).is(':checked'))
+                if ($(this).val() !== '')
                 {
                     showhide = true;
                 }
