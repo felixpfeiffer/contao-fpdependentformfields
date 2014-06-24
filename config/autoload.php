@@ -12,12 +12,21 @@
 
 
 /**
+ * Register the namespaces
+ */
+ClassLoader::addNamespaces(array
+(
+	'FelixPfeiffer',
+));
+
+
+/**
  * Register the classes
  */
 ClassLoader::addClasses(array
 (
 	// Classes
-	'fpDependedFormFields' => 'system/modules/fpDependedFormFields/classes/fpDependedFormFields.php',
+	'FelixPfeiffer\DependentFormFields\fpDependedFormFields' => 'system/modules/fpDependedFormFields/classes/fpDependedFormFields.php',
 ));
 
 
@@ -26,5 +35,6 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'j_dff' => 'system/modules/fpDependedFormFields/templates',
+	'form_row' => 'system/modules/fpDependedFormFields/templates',
+	'j_dff'    => 'system/modules/fpDependedFormFields/templates',
 ));

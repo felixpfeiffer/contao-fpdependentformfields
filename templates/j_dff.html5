@@ -1,9 +1,35 @@
 <script>
     (function($) {
-        $("[data-trigger]").keyup(function (event) {
+        $("[data-trigger]").on('keyup click', function () {
+            var showhide = false;
+
+            if($(this).attr('type') == 'text')
+            {
+                if ($(this).val() !== '')
+                {
+                    showhide = true;
+                }
+                else
+                {
+                    showhide=false;
+                }
+            }
+            else if($(this).attr('type') == 'checkbox')
+            {
+                if ($(this).is(':checked'))
+                {
+                    showhide = true;
+                }
+                else
+                {
+                    showhide=false;
+                }
+            }
+
             var el = $(this).attr('data-trigger');
             var req = $(this).attr('data-require');
-            if ($(this).val() !== '') {
+
+            if (showhide) {
                 $('#'+el).show();
                 if(req !== undefined)
                 {
@@ -12,6 +38,7 @@
             } else {
                 $('#'+el).hide();
                 $('input[name='+el).prop('required',false);
+                $('input[name='+el).val('');
             }
         });
     })(jQuery);

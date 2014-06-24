@@ -10,7 +10,7 @@
  * @license   LGPL
  * @copyright 2014 Felix Pfeiffer : Neue Medien
  */
-
+namespace FelixPfeiffer\DependentFormFields;
 
 /**
  * Class fpDependedFormFields
@@ -25,7 +25,7 @@ class fpDependedFormFields extends \Frontend
      * @return object
      * called from loadFormField HOOK
      */
-    public function addAttributes(Widget $objWidget, $strForm, $arrForm)
+    public function addAttributes(\Widget $objWidget, $strForm, $arrForm)
     {
         if(is_array($GLOBALS['hiddenFormFields']) && in_array($objWidget->id,$GLOBALS['hiddenFormFields']))
         {
