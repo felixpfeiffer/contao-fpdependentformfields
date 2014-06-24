@@ -1,0 +1,18 @@
+<script>
+    (function($) {
+        $("[data-trigger]").keyup(function (event) {
+            var el = $(this).attr('data-trigger');
+            var req = $(this).attr('data-require');
+            if ($(this).val() !== '') {
+                $('#'+el).show();
+                if(req !== undefined)
+                {
+                    $('input[name='+el).prop('required',true);
+                }
+            } else {
+                $('#'+el).hide();
+                $('input[name='+el).prop('required',false);
+            }
+        });
+    })(jQuery);
+</script>
