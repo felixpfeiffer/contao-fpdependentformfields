@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2005-2014 Leo Feyer
  *
- * @package FpDependedFormFields
+ * @package FpDependentFormFields
  * @link    https://contao.org
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
@@ -26,7 +26,7 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Classes
-	'felixpfeiffer\DependentFormFields\fpDependedFormFields' => 'system/modules/fpDependedFormFields/classes/fpDependedFormFields.php',
+	'felixpfeiffer\DependentFormFields\fpDependedFormFields' => 'system/modules/fpDependentFormFields/classes/fpDependedFormFields.php',
 ));
 
 
@@ -35,6 +35,6 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'form_row' => 'system/modules/fpDependedFormFields/templates',
-	'j_dff'    => 'system/modules/fpDependedFormFields/templates',
+	'form_row' => 'system/modules/fpDependentFormFields/templates',
+	'j_dff'    => 'system/modules/fpDependentFormFields/templates',
 ));
